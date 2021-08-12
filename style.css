@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  list-style-type: none;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  min-height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  background-color: #c3e0e5;
+  /* overflow-x: hidden; */
+}
+
+/* Navbar Styling */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 6rem;
+  width: 100%;
+  background-color: #274472;
+  /* padding: 0 1rem; */
+  transition: all 0.3s;
+}
+
+.navbar .fa-book-open:hover {
+  color: #0040ff;
+}
+
+.heading {
+  margin-left: 4rem;
+}
+
+.navbar h1 {
+  font-size: 2rem;
+  color: whitesmoke;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.icon {
+  margin-right: 1.5rem;
+}
+
+.search {
+  height: 4rem;
+  width: 15rem;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  padding-left: 4.5rem;
+  font-size: 2rem;
+  background-color: #41729f;
+  border: none;
+  transition: all 0.4s;
+}
+
+.search:focus {
+  background-color: whitesmoke;
+  width: 50rem;
+}
+
+.search:focus::placeholder {
+  color: rgba(54, 54, 54, 0.363);
+}
+
+::placeholder {
+  color: whitesmoke;
+}
+
+.input-box {
+  position: relative;
+  margin-right: 4rem;
+}
+
+.input-box-search {
+  font-size: 2rem;
+  color: rgb(252, 133, 156);
+  padding: 0.9rem;
+  position: absolute;
+  top: 0.1rem;
+  left: 0.1rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.input-box-search:hover {
+  background-color: rgb(126, 126, 126);
+}
+
+/* End of navbar styling */
+
+/* add-note Section styling */
+.add-notes {
+  margin: 0 auto;
+  width: 60rem;
+  padding: 2rem 0;
+}
+.add-notes > * {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+}
+.add-notes > :nth-child(1) {
+  padding: 1.5rem;
+  background-color: #5885af;
+  font-size: 2rem;
+  border: none;
+  color: #c3e0e5;
+  border-radius: 1rem;
+}
+.add-notes > :nth-child(2) {
+  padding: 1.5rem;
+  background-color: #5885af;
+  font-size: 2rem;
+  border: none;
+  color: #c3e0e5;
+  border-radius: 1rem;
+  resize: none;
+}
+.add-notes > :nth-child(3) {
+  padding: 1.5rem;
+  background-color: #274472;
+  font-size: 2rem;
+  border: none;
+  color: #c3e0e5;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.add-notes > :nth-child(1)::placeholder {
+  color: #c3e0e55b;
+}
+.add-notes > :nth-child(2)::placeholder {
+  color: #c3e0e55b;
+}
+/* End of add-note Section styling */
+/* Notes Section styling */
+section{
+  padding: 2rem 5rem;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.notes{
+  width: 30rem;
+  margin: 0.5rem;
+}
+.title{
+  color: #C3E0E5;
+  font-size: 2.5rem;
+  background-color: #41729F;
+  padding: 0.6rem;
+  text-align: center;
+}
+.user-note{
+  word-wrap: break-word;
+  color: #C3E0E5;
+  font-size: 1.8rem;
+  background-color: #5885AF;
+  padding: 0.6rem;
+  text-align: center;
+}
+.remove{
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 2rem;
+  background-color: #274472;
+  border: none;
+  color: #C3E0E5;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.remove:hover, #btn:hover{
+  background-color: #333;
+  color: whitesmoke;
+}
+/* End of Notes Section styling */
