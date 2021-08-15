@@ -6,8 +6,9 @@
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
-  outline: none;
   list-style-type: none;
+  outline: none;
+  overflow-x: hidden;
 }
 html {
   font-size: 62.5%;
@@ -18,7 +19,6 @@ body {
   font-weight: 400;
   min-height: 100vh;
   width: 100vw;
-  max-width: 100%;
   background-color: #c3e0e5;
   /* overflow-x: hidden; */
 }
@@ -149,44 +149,79 @@ body {
 }
 /* End of add-note Section styling */
 /* Notes Section styling */
-section{
+section {
   padding: 2rem 5rem;
   flex-wrap: wrap;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.notes{
+.notes {
   width: 30rem;
   margin: 0.5rem;
 }
-.title{
-  color: #C3E0E5;
+.title {
+  color: #c3e0e5;
   font-size: 2.5rem;
-  background-color: #41729F;
+  background-color: #41729f;
   padding: 0.6rem;
   text-align: center;
 }
-.user-note{
+.user-note {
   word-wrap: break-word;
-  color: #C3E0E5;
+  color: #c3e0e5;
   font-size: 1.8rem;
-  background-color: #5885AF;
+  background-color: #5885af;
   padding: 0.6rem;
   text-align: center;
 }
-.remove{
+.remove {
   width: 100%;
   padding: 0.5rem;
   font-size: 2rem;
   background-color: #274472;
   border: none;
-  color: #C3E0E5;
+  color: #c3e0e5;
   cursor: pointer;
   transition: all 0.5s;
 }
-.remove:hover, #btn:hover{
+.remove:hover,
+#btn:hover {
   background-color: #333;
   color: whitesmoke;
 }
 /* End of Notes Section styling */
+
+/* Media Query */
+@media only screen and (max-width: 480px) {
+  body{
+    padding: 0;
+  }
+  .navbar {
+    width: 100vw;
+    justify-content: center;
+  }
+
+  .input-box {
+    display: none;
+  }
+
+  .add-notes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .add-notes > :nth-child(1) {
+    width: 100vw;
+  }
+  .add-notes > :nth-child(2) {
+    width: 100vw;
+  }
+  .add-notes > :nth-child(3) {
+    width: 100vw;
+  }
+}
+/* End of Media Query */
