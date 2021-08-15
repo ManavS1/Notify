@@ -23,8 +23,8 @@ btn.addEventListener("click", () => {
     // section.innerHTML += HTML;
   }
   // clearing the entered value by user
-  // title.value = "";
-  // userNote.value = "";
+  title.value = "";
+  userNote.value = "";
 
   let notes = document.querySelectorAll(".notes");
   notes.forEach((item) => {
